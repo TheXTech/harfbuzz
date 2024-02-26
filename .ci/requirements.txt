@@ -4,6 +4,10 @@
 #
 #    pip-compile --generate-hashes .ci/requirements.in
 #
+colorlog==6.8.2 \
+    --hash=sha256:3e3e079a41feb5a1b64f978b5ea4f46040a94f11f0e8bbb8261e3dbbeca64d44 \
+    --hash=sha256:4dcbb62368e2800cb3c5abd348da7e53f6c362dda502ec27c560b2e58a66bd33
+    # via gcovr
 fonttools==4.43.1 \
     --hash=sha256:10003ebd81fec0192c889e63a9c8c63f88c7d72ae0460b7ba0cd2a1db246e5ad \
     --hash=sha256:10b3922875ffcba636674f406f9ab9a559564fdbaa253d66222019d569db869c \
@@ -48,9 +52,9 @@ fonttools==4.43.1 \
     --hash=sha256:f7a58eb5e736d7cf198eee94844b81c9573102ae5989ebcaa1d1a37acd04b33d \
     --hash=sha256:fe9b1ec799b6086460a7480e0f55c447b1aca0a4eecc53e444f639e967348896
     # via -r requirements-fonttools.in
-gcovr==5.0 \
-    --hash=sha256:1d80264cbaadff356b3dda71b8c62b3aa803e5b3eb6d526a24932cd6660a2576 \
-    --hash=sha256:8c49ebcfc5a98b56dd900c687aad0258ac86093d2f81a1417905193ab45fe69f
+gcovr==7.2 \
+    --hash=sha256:e3e95cb56ca88dbbe741cb5d69aa2be494eb2fc2a09ee4f651644a670ee5aeb3 \
+    --hash=sha256:fd5cc432c9df863983c530dbd5077937c730b6589117916c188577681469b395
     # via -r requirements.in
 jinja2==3.1.2 \
     --hash=sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852 \
@@ -211,4 +215,8 @@ ninja==1.11.1.1 \
 pygments==2.15.1 \
     --hash=sha256:8ace4d3c1dd481894b2005f560ead0f9f19ee64fe983366be1a21e171d12775c \
     --hash=sha256:db2db3deb4b4179f399a09054b023b6a586b76499d36965813c71aa8ed7b5fd1
+    # via gcovr
+tomli==2.0.1 \
+    --hash=sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc \
+    --hash=sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f
     # via gcovr
